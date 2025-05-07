@@ -35,7 +35,7 @@ jobs:
         uses: MaximilianoBz/dockerhub-buildpush@v1.1
         with:
           registry_url: docker.io
-          repository_name: sagar1597/githubactiondemo
+          repository_name: sagar1597/githubactiondemo:latest
           user_name: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
           docker_file: '.'
