@@ -36,7 +36,7 @@ jobs:
         with:
           registry_url: 'docker.io'
           repository_name: 'githubactiondemo'
-          user_name: sagar1597 
-          password: Xaja$~1997
+          user_name: ${{ secrets.DOCKER_USERNAME }} 
+          password: ${{ secrets.DOCKER_PASSWORD }}
           image_version: 'v1.0'
           docker_file: '.'
